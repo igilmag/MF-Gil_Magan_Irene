@@ -1,29 +1,58 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ejercicios JS</title>
 </head>
-<body>
-  
- <form name="ejercicio-3">
-  <h1>Ejercicio 3</h1>
-  <p class="miParrafo">
-Añade tu nombre y apellidos al darle al botón 
-</p>
-</form>
-<button class="button" id="btn1">Añadir</button>
 
-<form name="ejercicio-2">
-  <h1>Ejercicio 2</h1>
-<input type="numero">
-Introduce un número entero
-</form>
-<button class="button" id="btn2">Añade número</button>
+<body class="main-body">
+  <h1 class="main-title">Ejercicios de Javascript</h1>
+  <form class="ejercicio-1">
+    <h2>Ejercicio 1</h2>
+    <p class="parrafo-ejercicio">
+      Crea una función denominada dimeTipoMotor() donde pidas el tipo de motor al usuario (indicando que los
+      valores posibles son 1, 2, 3, 4)
+      1. Si el tipo de motor es 0, mostrar un mensaje indicando “No hay establecido un valor definido para
+      el tipo de bomba”.
+      2. Si el tipo de motor es 1, mostrar un mensaje indicando “La bomba es una bomba de agua”.
+      3. Si el tipo de motor es 2, mostrar un mensaje indicando “La bomba es una bomba de gasolina”.
+      4. Si el tipo de motor es 3, mostrar un mensaje indicando “La bomba es una bomba de hormigón”.
+      5. Si el tipo de motor es 4, mostrar un mensaje indicando “La bomba es una bomba de pasta
+      alimenticia”.
+      6. Si no se cumple ninguno de los valores anteriores mostrar el mensaje “No existe un valor válido
+      para tipo de bomba”.</p>
+    <input type="number" name="tipo-motor" id="tipo-motor" placeholder="Valor posible: 1, 2, 3 o 4">
+
+    <button class="button" id="btn1">Dime tipo de motor</button>
+    <p id="mensaje-motor"></p>
+  </form>
+
+  <form class="ejercicio-2">
+    <h2>Ejercicio 2</h2>
+    <p class="parrafo-ejercicio">
+      Escribir un programa que me pida un número entero y validar si el número es impar.</p>
+    <input type="number" name="numero-impar" id="numero-impar" placeholder="Valores superiores a 0">
+
+    <button class="button" id="btn2">¿Será impar?</button>
+    <p id="mensaje-impar"></p>
+  </form>
+
+  <form class="ejercicio-3">
+    <h2>Ejercicio 3</h2>
+    <p class="miParrafo">
+      Añadir un nuevo elemento p con nombre de clase “miParrafo“ y con el texto que ponga tu nombre y apellidos y sea
+      hijo del body.
+    </p>
+    <button class="button" id="btn3">Añadir párrafo</button>
+
+  </form>
+
+
 
 </body>
-<script src="parrafo.js"></script>
-<script src="impar.js"></script>
+<script type="module" src="main.js"></script>
+
 </html>
